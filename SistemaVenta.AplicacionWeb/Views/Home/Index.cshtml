@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Pagina de Inicio";
+}
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f6f6;
+            }
+
+            header {
+                background-color: #2f5EEB;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+
+            section {
+                background-color: #ffffff;
+                margin: 20px;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            video {
+                max-width: 100%;
+            }
+
+            #image-carousel {
+                display: flex;
+                overflow: hidden;
+            }
+
+            #image-carousel img {
+                max-width: 20%;
+                height: auto;
+                margin-right: 10px;
+                transition: transform 1s;
+            }
+
+            #contactanos {
+                background-color: #f0f0f0;
+            }
+
+            footer {
+                background-color: #2f5EEB;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+        <section id="OSOS TECH">
+            <h2>OSOS TECH</h2>
+            <section id="OSOS TECH">
+
+                <p>
+                Osos Tech surge para atender las crecientes necesidades mostradas por el mercado de consumidores de electronicos y
+                computo con la idea de satisfacerlas de una forma eficaz, ágil y con precios accesibles, además somos uno de los
+                más grandes vendedores en la plataforma Mercado Libre(distinguidos con el nombramiento de mercadolider platinum,
+                categoría que se le otorga sólo a vendedores miembros de la comunidad que gozan de una reputación impecable).
+                </p>
+
+                <p>
+                Actualmente contamos con una oficina central y una sucursal ubicada en la zona centro de la ciudad de Guadalajara,
+                Jalisco, desde sus inicios nos propusimos ser una empresa que crease una conexión más directa entre sus clientes y personal,
+                que los guiará a realizar una buena compra. Más de 7 años brindando atención, servicio, calidad e innovación.
+                </p>
+
+                <p>
+                Nuestro compromiso con los clientes es lo mas importante y por eso nuestro objetivo es satisfacer de manera eficaz las
+                necesidades del mercado, buscando la mejora continua en los servicios de la empresa. Ser el aliado estratégico de nuestros clientes,
+                guiándolos a una compra inteligente.Ser el mejor proveedor de tecnología y servicio online para un mercado en constante cambio.
+                </p>
+
+                <p>
+                    Gracias por confiar en OSOS TECH, disfruta de nuertro amlpio catalogo de productos para todas tus necesidades! 
+                </p>
+            </section>
+
+            @*<video width="640" height="360" controls>
+            <source src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2Fdise%C3%B1os.mp4?alt=media&token=761ad226-c4e9-44b5-beed-afd10624dc52" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>*@
+        </section>
+
+        @*<section id="galeria">
+            <h2>Promociones</h2>
+            <div id="image-carousel">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2FPromo1.png?alt=media&token=50bddc24-fb0d-46f2-8396-7e4c40c1c595" alt="Imagen 1">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2FPromo2.png?alt=media&token=040ce6bc-d32a-4670-a595-fec239b55553" alt="Imagen 2">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2FPromo3.png?alt=media&token=604e7278-1cc6-46a0-81fe-9312be1bf7ca" alt="Imagen 3">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2FPROMO4.png?alt=media&token=8ebb5223-59b7-458c-8d97-894750f7745f" alt="Imagen 4">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ventapi2.appspot.com/o/Interfaz%2FPromo5.png?alt=media&token=e115f7f9-3fd0-4039-af8c-a8d73b3ab414" alt="Imagen 5">
+            </div>
+
+            <script>
+                const carousel = document.getElementById("image-carousel");
+                const images = carousel.querySelectorAll("img");
+                let currentIndex = 0;
+
+                function rotateCarousel() {
+                    images[currentIndex].style.opacity = 0;
+                    currentIndex = (currentIndex + 1) % images.length;
+                    images[currentIndex].style.opacity = 1;
+                }
+
+                setInterval(rotateCarousel, 500); // Cambia de imagen cada 3 segundos AJUSTAR EN CASO DE SER NECESARIO
+            </script>
+        </section>*@
+
+        <section id="contactanos">
+            <h2>Contáctanos</h2>
+        <p>Si deseas ponerte en contacto con nosotros, puedes hacerlo a través de: soporte@osostech.com</p>
+        </section>
+        <footer>
+            <p>Derechos de autor © 2023 OSOS TECH</p>
+        </footer>
+    </body>
+</html>
